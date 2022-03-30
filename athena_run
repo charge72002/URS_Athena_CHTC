@@ -1,0 +1,18 @@
+#!/bin/bash
+# Make sure this script is in the HOME directory.
+# Make sure there is only one athinput file per directory!
+
+athenaPath="Athena_Radiation-master"
+cd $athenaPath
+# configure
+python configure.py --prob=ParkerInst -cr -b -hdf5 --include=/opt/homebrew/Cellar/hdf5/1.12.1 --hdf5_path=/opt/homebrew/Cellar/hdf5/1.12.1 > ../log_config.txt;
+cd ..;
+
+for OUTdir in $(ls -d OUT*/)
+do
+	echo $OUTdir
+	cd $OUTdir
+	inputFile=$(ls athinput*)
+	echo $(time (../$athenaPath/bin/athena -i $inputFile >log_run.txt))
+	cd ..
+done
