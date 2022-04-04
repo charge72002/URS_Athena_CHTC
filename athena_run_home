@@ -13,6 +13,6 @@ do
 	echo $OUTdir
 	cd $OUTdir
 	inputFile=$(ls athinput*)
-	echo $(time (../$athenaPath/bin/athena -i $inputFile >log_run.txt))
+	echo $(time (${athenaPath}/bin/athena -i $inputFile >log_run.txt))
 	cd ..
 done
