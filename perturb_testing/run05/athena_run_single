@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --partition=astro3 
+#SBATCH --time=0-05:00:00 #runtime in days-hh:mm:ss
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=8 #cpus per node
+#SBATCH --mem=128000 #RAM per node
+#SBATCH --error=job.%J.err 
+#SBATCH --output=job.%J.out
+
+# Make sure there is only one athinput file per directory!
+
+module load openmpi
+module load hdf5
+
+athenaPath="/software/bwong24/Athena_Radiation-master_perturb"
+OUT_Path="/home/bwong24/URS_Athena_CHTC/run05/OUT_HighRes_128x256x64"
+
+# Athena should ALREADY be configured at this point!
+
+export OMP_NUM_THREADS=8
+
+cd $OUT_Path;
+inputFile=$(ls athinput*)
+echo $(time (mpiexec -n 2 $athenaPath/bin/athena -i $inputFile >log_run.txt))

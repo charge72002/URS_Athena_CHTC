@@ -1,0 +1,26 @@
+HDF5-DIAG: Error detected in HDF5 (1.8.13) thread 0:
+  #000: H5F.c line 1512 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5F.c line 1385 in H5F_open(): unable to read superblock
+    major: File accessibilty
+    minor: Read failed
+  #002: H5Fsuper.c line 353 in H5F_super_read(): unable to load superblock
+    major: Object cache
+    minor: Unable to protect metadata
+  #003: H5AC.c line 1323 in H5AC_protect(): H5C_protect() failed.
+    major: Object cache
+    minor: Unable to protect metadata
+  #004: H5C.c line 3574 in H5C_protect(): can't load entry
+    major: Object cache
+    minor: Unable to load metadata into cache
+  #005: H5C.c line 7954 in H5C_load_entry(): unable to load entry
+    major: Object cache
+    minor: Unable to load metadata into cache
+  #006: H5Fsuper_cache.c line 471 in H5F_sblock_load(): truncated file: eof = 39920, sblock->base_addr = 0, stored_eoa = 176200688
+    major: File accessibilty
+    minor: File has been truncated
+
+real	0m40.288s
+user	0m54.006s
+sys	0m3.206s

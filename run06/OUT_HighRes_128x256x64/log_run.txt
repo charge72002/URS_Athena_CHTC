@@ -1,0 +1,19 @@
+### FATAL ERROR in athdf5 initialization
+Could not open parker.out1.00000.athdf
+
+### FATAL ERROR in athdf5 initialization
+Could not open parker.out1.00000.athdf
+
+
+Setup complete, entering main loop...
+
+cycle=0 time=0.0000000000000000e+00 dt=1.5625000000000003e-04
+cycle=100 time=1.5625000000000010e-02 dt=1.5625000000000003e-04
+
+Terminating on cycle limit
+time=1.5625000000000010e-02 cycle=100
+tlim=1.0227121700000000e+01 nlim=100
+
+zone-cycles = 209715200
+cpu time used  = 1.1668399999999999e+03
+zone-cycles/cpu_second = 1.7972918309279764e+05

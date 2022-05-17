@@ -1,0 +1,22 @@
+HDF5-DIAG: Error detected in HDF5 (1.8.13) thread 0:
+  #000: H5F.c line 1512 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5F.c line 1385 in H5F_open(): unable to read superblock
+    major: File accessibilty
+    minor: Read failed
+  #002: H5Fsuper.c line 336 in H5F_super_read(): file signature not found
+    major: File accessibilty
+    minor: Not an HDF5 file
+slurmstepd: error: *** JOB 159451 ON hpc368 CANCELLED AT 2022-05-05T16:13:44 ***
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[33890,0],0] on node hpc368
+  Remote daemon: [[33890,0],1] on node hpc370
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------

@@ -1,0 +1,24 @@
+HDF5-DIAG: Error detected in HDF5 (1.8.13) thread 0:
+  #000: H5F.c line 1512 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5F.c line 1385 in H5F_open(): unable to read superblock
+    major: File accessibilty
+    minor: Read failed
+  #002: H5Fsuper.c line 336 in H5F_super_read(): file signature not found
+    major: File accessibilty
+    minor: Not an HDF5 file
+HDF5-DIAG: Error detected in HDF5 (1.8.13) thread 0:
+  #000: H5F.c line 1512 in H5Fcreate(): unable to create file
+    major: File accessibilty
+    minor: Unable to open file
+  #001: H5F.c line 1385 in H5F_open(): unable to read superblock
+    major: File accessibilty
+    minor: Read failed
+  #002: H5Fsuper.c line 336 in H5F_super_read(): file signature not found
+    major: File accessibilty
+    minor: Not an HDF5 file
+
+real	19m57.174s
+user	20m30.590s
+sys	0m9.691s
