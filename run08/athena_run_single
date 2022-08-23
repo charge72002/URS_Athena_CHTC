@@ -12,7 +12,7 @@
 module load openmpi
 module load hdf5
 
-athenaPath="/software/bwong24/Athena_Radiation-master_merged"
+athenaPath="/software/bwong24/Athena_Radiation-master_perturb"
 OUT_Path="/home/bwong24/URS_Athena_CHTC/run07/OUT_HighRes_128x256x64"
 
 # Athena should ALREADY be configured at this point!

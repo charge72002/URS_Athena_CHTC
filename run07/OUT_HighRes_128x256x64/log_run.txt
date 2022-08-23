@@ -1,0 +1,16 @@
+
+Setup complete, entering main loop...
+
+cycle=0 time=0.0000000000000000e+00 dt=1.5625000000000003e-04
+cycle=100 time=1.5625000000000010e-02 dt=1.5625000000000003e-04
+
+Terminating on cycle limit
+time=1.5625000000000010e-02 cycle=100
+tlim=1.0227121700000000e+01 nlim=100
+
+zone-cycles = 209715200
+cpu time used  = 3.7266999999999996e+02
+zone-cycles/cpu_second = 5.6273700593017961e+05
+
+omp wtime used = 3.7228939283301588e+02
+zone-cycles/omp_wsecond = 5.6331231573407794e+05
